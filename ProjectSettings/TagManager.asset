@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GameManager
+  - Shield
+  - AttackCollider
+  - Enemy
+  - CardImage
+  - CardDamage
+  - CardName
   layers:
   - Default
   - TransparentFX

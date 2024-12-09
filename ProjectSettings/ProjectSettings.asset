@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 700
+  defaultScreenHeightWeb: 400
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -467,7 +467,18 @@ PlayerSettings:
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
-  m_TemplateCustomTags: {}
+  m_TemplateCustomTags:
+    ADSGRAM_BLOCK_ID: 
+    FACEBOOK_PLACEMENT_ID: 
+    GAME_DISTRIBUTION_GAME_ID: 
+    LAGGED_DEV_ID: 
+    LAGGED_PUBLISHER_ID: 
+    OVERLAY_BACKGROUND_COLOR: 
+    PROGRESS_BAR_BACKGROUND_COLOR: 
+    PROGRESS_BAR_FILL_COLOR: 
+    Y8_ADSENSE_ID: 
+    Y8_CHANNEL_ID: 
+    Y8_GAME_ID: 
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -715,15 +726,31 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:Bridge
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 2
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  webGLDecompressionFallback: 1
+  scriptingDefineSymbols:
+    Android: DOTWEEN
+    CloudRendering: DOTWEEN
+    EmbeddedLinux: DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: DOTWEEN
+    Lumin: DOTWEEN
+    Nintendo Switch: DOTWEEN
+    PS4: DOTWEEN
+    PS5: DOTWEEN
+    Stadia: DOTWEEN
+    Standalone: DOTWEEN
+    WebGL: DOTWEEN
+    Windows Store Apps: DOTWEEN
+    XboxOne: DOTWEEN
+    iPhone: DOTWEEN
+    tvOS: DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
