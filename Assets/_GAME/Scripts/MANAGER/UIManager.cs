@@ -1,5 +1,6 @@
 using DG.Tweening;
 using LayerLab;
+using Playgama;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -123,7 +124,7 @@ public class UIManager : MonoBehaviour
 
         DataManager.instance.AddXP(XP);
         DataManager.instance.AddGold(rewardGold);
-        DataManager.instance.AddEnergy(3);
+        DataManager.instance.AddEnergy(2);
     }
     public void LoseFinishPanelOpen()
     {
@@ -142,6 +143,7 @@ public class UIManager : MonoBehaviour
     }
     public void FinishButton()
     {
+        Bridge.advertisement.ShowInterstitial();
         SceneManager.LoadScene(0);
     }
     public void OpenCardsPanel()

@@ -81,6 +81,9 @@ public class StoreManager : MonoBehaviour
                 case "battlemidpack":
                     BattleMidAdPack();
                     break;
+                case "menugiftpack":
+                    MenuGiftPack();
+                    break;
 
                 default:
                     Debug.LogWarning("Unknown context: " + currentAdContext);
@@ -145,12 +148,9 @@ public class StoreManager : MonoBehaviour
         //        DataManager.instance.AddEnergy(3);
         //    }
         //});
-        energyCount++;
-        energyCountText.text = energyCount + " AD WATCHED";
-        if (energyCount == 2)
-        {
+        
             DataManager.instance.AddEnergy(3);
-        }
+        
 
     }
     public void BigEnergyPack()
@@ -209,15 +209,16 @@ public class StoreManager : MonoBehaviour
         //    /** ad error */
         //}, () =>
         //{
-        //    goldCount++;
-        //    goldText.text = goldCount + " AD WATCHED";
-        //    if (goldCount == 2)
-        //    {
-        //        DataManager.instance.AddGold(40);
-        //    }
+        //    
         //});
 
-        DataManager.instance.AddGold(40);
+        goldCount++;
+        goldText.text = goldCount + " AD WATCHED";
+        if (goldCount == 2)
+        {
+            DataManager.instance.AddGold(40);
+        }
+
     }
 
     public void GameMidAdPack()
@@ -253,6 +254,11 @@ public class StoreManager : MonoBehaviour
         //});
 
         DataManager.instance.AddGold(10);
+    }
+
+    public void MenuGiftPack()
+    {
+        DataManager.instance.AddGold(5);
     }
 
 }

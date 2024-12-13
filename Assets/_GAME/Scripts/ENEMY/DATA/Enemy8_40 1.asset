@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Deathclaw
   enemyIcon: {fileID: 21300000, guid: b942e8269744c79439055451eec4d12e, type: 3}
   health: 40
-  damage: 7
+  damage: 15
   level: 5

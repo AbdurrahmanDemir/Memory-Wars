@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Rotfang
   enemyIcon: {fileID: 21300000, guid: db396d2ac246e54498ae27e5ab9e9358, type: 3}
   health: 30
-  damage: 5
+  damage: 12
   level: 5

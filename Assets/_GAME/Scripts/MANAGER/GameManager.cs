@@ -45,40 +45,6 @@ public class GameManager : MonoBehaviour
 
     public void GamePlay()
     {
-
-        //CrazySDK.Ad.RequestAd(CrazyAdType.Midgame, () =>
-        //{
-        //    /** ad started */
-        //}, (error) =>
-        //{
-        //    if (DataManager.instance.TryPurchaseEnergy(1))
-        //    {
-        //        UIManager.instance.GameUIStageChanged(GameState.Game);
-        //        StartLevel(LevelManager.instance.LoadLevel());
-        //        MoveUpdate(0);
-        //        PlayerTakeDamage(0);
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("Enerjin yok");
-        //        UIManager.instance.OpenGameMidAdPanel();
-        //    }
-        //}, () =>
-        //{
-        //    if (DataManager.instance.TryPurchaseEnergy(1))
-        //    {
-        //        UIManager.instance.GameUIStageChanged(GameState.Game);
-        //        StartLevel(LevelManager.instance.LoadLevel());
-        //        MoveUpdate(0);
-        //        PlayerTakeDamage(0);
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("Enerjin yok");
-        //        UIManager.instance.OpenGameMidAdPanel();
-        //    }
-        //});
-
         if (DataManager.instance.TryPurchaseEnergy(1))
         {
             UIManager.instance.GameUIStageChanged(GameState.Game);
